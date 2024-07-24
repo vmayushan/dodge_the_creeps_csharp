@@ -3,7 +3,7 @@ using Godot;
 public partial class HUD : CanvasLayer
 {
     [Signal]
-    public delegate void StartGameEventHandler();
+    public delegate void StartGame();
 
     public void ShowMessage(string text)
     {
@@ -19,10 +19,11 @@ public partial class HUD : CanvasLayer
         ShowMessage("Game Over");
 
         var messageTimer = GetNode<Timer>("MessageTimer");
-        await ToSignal(messageTimer, Timer.SignalName.Timeout);
+        await ToSignal(messageTimer, "timeout");
 
-        ShowMessage("Dodge the\nCreeps!");
-        await ToSignal(GetTree().CreateTimer(1.0), SceneTreeTimer.SignalName.Timeout);
+        var messageLabel = GetNode<Label>("MessageLabel");
+        messageLabel.Text = "Dodge the\nCreeps!";
+        messageLabel.Show();
 
         GetNode<Button>("StartButton").Show();
     }
@@ -35,7 +36,7 @@ public partial class HUD : CanvasLayer
     public void OnStartButtonPressed()
     {
         GetNode<Button>("StartButton").Hide();
-        EmitSignal(SignalName.StartGame);
+        EmitSignal(nameof(StartGame));
     }
 
     public void OnMessageTimerTimeout()

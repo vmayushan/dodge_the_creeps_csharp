@@ -10,9 +10,13 @@ consider following the tutorial in the documentation.
 
 Language: [C#](https://docs.godotengine.org/en/latest/tutorials/scripting/c_sharp/index.html)
 
-Renderer: Compatibility
+Renderer: GLES 3 (particles are not available in GLES 2)
 
 Note: There is a GDScript version available [here](https://github.com/godotengine/godot-demo-projects/tree/master/2d/dodge_the_creeps).
+
+Note: There is a GDNative C++ version available [here](https://github.com/godotengine/gdnative-demos/tree/master/cpp/dodge_the_creeps).
+
+Check out this demo on the asset library: https://godotengine.org/asset-library/asset/534
 
 ## Screenshots
 

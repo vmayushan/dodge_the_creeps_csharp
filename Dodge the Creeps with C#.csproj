@@ -1,13 +1,19 @@
 <Project Sdk="Godot.NET.Sdk/4.2.2">
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <EnableDynamicLoading>true</EnableDynamicLoading>
     <RootNamespace>DodgeTheCreeps</RootNamespace>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
   <ItemGroup>
     <None Include="**/*.tscn" />
   </ItemGroup>
   <ItemGroup>
     <None Include="project.godot" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="gdUnit4.api" Version="4.3.0" />
+    <PackageReference Include="gdUnit4.test.adapter" Version="2.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
   </ItemGroup>
 </Project>

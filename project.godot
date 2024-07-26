@@ -32,6 +32,10 @@ window/stretch/mode="canvas_items"
 
 project/assembly_name="Dodge the Creeps with C#"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/gdUnit4/plugin.cfg")
+
 [input]
 
 move_left={

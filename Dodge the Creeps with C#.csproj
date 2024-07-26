@@ -17,4 +17,7 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
     <PackageReference Include="TeamCity.VSTest.TestAdapter" Version="1.0.40" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include=".runsettings" />
+  </ItemGroup>
 </Project>

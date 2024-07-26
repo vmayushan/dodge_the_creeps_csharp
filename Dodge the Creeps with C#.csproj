@@ -1,4 +1,4 @@
-<Project Sdk="Godot.NET.Sdk/4.2.2">
+<Project Sdk="Godot.NET.Sdk/4.2.1">
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <EnableDynamicLoading>true</EnableDynamicLoading>
@@ -12,8 +12,8 @@
     <None Include="project.godot" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="gdUnit4.api" Version="4.3.0" />
-    <PackageReference Include="gdUnit4.test.adapter" Version="2.0.0" />
+    <PackageReference Include="gdUnit4.api" Version="4.2.3" />
+    <PackageReference Include="gdUnit4.test.adapter" Version="1.1.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
   </ItemGroup>
 </Project>
